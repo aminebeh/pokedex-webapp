@@ -25,5 +25,16 @@
 	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
-	"runArgs": []
+	"runArgs": [],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"esbenp.prettier-vscode",
+				"ms-vscode-remote.remote-containers",
+				"nrwl.angular-console",
+				"firsttris.vscode-jest-runner",
+				"ms-playwright.playwright"
+			]
+		}
+	}
 }

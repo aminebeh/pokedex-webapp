@@ -35,7 +35,11 @@
 				"ms-vscode-remote.remote-containers",
 				"nrwl.angular-console",
 				"firsttris.vscode-jest-runner",
-				"ms-playwright.playwright"
+				"ms-playwright.playwright",
+				"quicktype.quicktype",
+				"dbaeumer.vscode-eslint",
+				"Angular.ng-template",
+				"johnpapa.Angular2"
 			]
 		}
 	}

@@ -1,0 +1,63 @@
+<div class="poke-list-header">
+  <h1 class="poke-header-title">PokéList</h1>
+  <div class="poke-header-chip">
+    <!-- Here goes pokeball icon -->
+    <img
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+      alt="Pokeball Icon"
+      class="pokeball-icon"
+    />
+    <p class="poke-header-chip-text">{{ catchedTotal }}</p>
+  </div>
+  <div class="poke-header-chip">
+    <!-- Here goes seen icon -->
+    <img
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/seen-icon.png"
+      alt="Seen Icon"
+      class="seen-icon"
+    />
+    <p class="poke-header-chip-text">{{ seenTotal }}</p>
+  </div>
+  <div class="poke-list-sort">
+    <!-- Depending on viewport, should be a text or an icon -->
+    <select>
+      <option value="id" selected>By Number</option>
+      <option value="name">By Name</option>
+      <option value="height">By Height</option>
+      <option value="weight">By Weight</option>
+    </select>
+  </div>
+</div>
+
+<div class="poke-list-body">
+  @for(pokemon of pokemons; track pokemon.id) {
+  <div class="poke-list-item">
+    <div class="poke-list-item-image">
+      <img
+        [src]="pokemon.sprites.front_default"
+        [alt]="pokemon.name"
+        class="poke-list-item-image"
+      />
+    </div>
+    <div class="poke-list-item-info">
+      <p class="poke-list-item-id">No. {{ pokemon.id }}</p>
+      <h2 class="poke-list-item-name">{{ pokemon.name }}</h2>
+    </div>
+    <div class="poke-list-item-status">
+      @if ($pokemon->isCatched())
+      <p class="poke-list-item-status-text">Catched</p>
+      @endif
+    </div>
+    <!-- <div class="poke-list-item-actions">
+                <button class="poke-list-item-action" (click)="catchPokemon(pokemon)">
+                    Catch
+                </button>
+                <button class="poke-list-item-action" (click)="seePokemon(pokemon)">
+                    See
+                </button>
+                </div> -->
+  </div>
+  }
+</div>
+
+<div class="poke-list-footer"></div>

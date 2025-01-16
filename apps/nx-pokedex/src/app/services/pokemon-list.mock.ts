@@ -340,4 +340,64 @@ export const pokemons = [
     ],
     url: 'https://pokeapi.co/api/v2/pokemon/13/',
   },
+  {
+    id: 14,
+    name: 'Kakuna',
+    cry: 'https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/14.ogg',
+    sprites: {
+      showdown:
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/14.gif',
+      icons: {
+        front_default:
+          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/14.png',
+      },
+    },
+    types: [
+      {
+        slot: 1,
+        type: {
+          name: 'bug',
+          url: 'https://pokeapi.co/api/v2/type/7/',
+        },
+      },
+      {
+        slot: 2,
+        type: {
+          name: 'poison',
+          url: 'https://pokeapi.co/api/v2/type/4/',
+        },
+      },
+    ],
+    url: 'https://pokeapi.co/api/v2/pokemon/14/',
+  },
+  {
+    id: 15,
+    name: 'Beedrill',
+    cry: 'https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/15.ogg',
+    sprites: {
+      showdown:
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/15.gif',
+      icons: {
+        front_default:
+          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/15.png',
+      },
+    },
+    types: [
+      {
+        slot: 1,
+        type: {
+          name: 'bug',
+          url: 'https://pokeapi.co/api/v2/type/7/',
+        },
+      },
+      {
+        slot: 2,
+        type: {
+          name: 'poison',
+          url: 'https://pokeapi.co/api/v2/type/4/',
+        },
+      },
+    ],
+    url: 'https://pokeapi.co/api/v2/pokemon/15/',
+  },
 ];

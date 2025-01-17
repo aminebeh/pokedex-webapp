@@ -1,63 +1,137 @@
-<div class="poke-list-header">
-  <h1 class="poke-header-title">PokéList</h1>
-  <div class="poke-header-chip">
-    <!-- Here goes pokeball icon -->
-    <img
-      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
-      alt="Pokeball Icon"
-      class="pokeball-icon"
-    />
-    <p class="poke-header-chip-text">{{ catchedTotal }}</p>
-  </div>
-  <div class="poke-header-chip">
-    <!-- Here goes seen icon -->
-    <img
-      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/seen-icon.png"
-      alt="Seen Icon"
-      class="seen-icon"
-    />
-    <p class="poke-header-chip-text">{{ seenTotal }}</p>
-  </div>
-  <div class="poke-list-sort">
-    <!-- Depending on viewport, should be a text or an icon -->
-    <select>
-      <option value="id" selected>By Number</option>
-      <option value="name">By Name</option>
-      <option value="height">By Height</option>
-      <option value="weight">By Weight</option>
-    </select>
-  </div>
-</div>
-
-<div class="poke-list-body">
-  @for(pokemon of pokemons; track pokemon.id) {
-  <div class="poke-list-item">
-    <div class="poke-list-item-image">
+<div class="poke-list-layout">
+  <div class="poke-list-header">
+    <h1 class="poke-header-title">Pokédex</h1>
+    <div class="poke-header-chip">
+      <!-- Here goes pokeball icon -->
       <img
-        [src]="pokemon.sprites.front_default"
-        [alt]="pokemon.name"
-        class="poke-list-item-image"
+        src="/assets/icons/captured-icon_captured-icon-colored.svg"
+        alt="Pokeball Icon"
+        class="pokeball-icon"
       />
+      <p class="poke-header-chip-text">
+        {{ catchedTotal$() | number : '3.0' }}
+      </p>
     </div>
-    <div class="poke-list-item-info">
-      <p class="poke-list-item-id">No. {{ pokemon.id }}</p>
-      <h2 class="poke-list-item-name">{{ pokemon.name }}</h2>
+    <div class="poke-header-chip">
+      <!-- Here goes seen icon -->
+      <img
+        src="/assets/icons/pkm-catch-status--light.svg"
+        alt="Seen Icon"
+        class="seen-icon"
+      />
+      <p class="poke-header-chip-text">
+        {{ catchedAndSeenTotal$() | number : '3.0' }}
+      </p>
     </div>
-    <div class="poke-list-item-status">
-      @if ($pokemon->isCatched())
-      <p class="poke-list-item-status-text">Catched</p>
-      @endif
+    <div class="poke-list-sort">
+      <!-- Depending on viewport, should be a text or an icon -->
+      <select class="poke-list-sort-select" [(ngModel)]="pokedexSortCriteria$">
+        <option value="id" selected>By Number</option>
+        <option value="name">By Name</option>
+        <option value="height">By Height</option>
+        <option value="weight">By Weight</option>
+      </select>
     </div>
-    <!-- <div class="poke-list-item-actions">
-                <button class="poke-list-item-action" (click)="catchPokemon(pokemon)">
-                    Catch
-                </button>
-                <button class="poke-list-item-action" (click)="seePokemon(pokemon)">
-                    See
-                </button>
-                </div> -->
   </div>
-  }
-</div>
 
-<div class="poke-list-footer"></div>
+  <div class="poke-list-body">
+    <div class="poke-list-showdown">
+      <div class="poke-showdown-image-container">
+        @if(selectedPokemon$(); as selectedPokemon) {
+        <img
+          [src]="selectedPokemon.sprites.showdown"
+          [alt]="selectedPokemon.name"
+          class="poke-showdown-image"
+        />
+        } @else {
+        <div>Hover on a pokemon ➡️</div>
+        }
+      </div>
+    </div>
+    <div class="poke-list-container">
+      @for(pokemon of sortedPokedexEntries$(); track pokemon.id) {
+      <div
+        class="poke-list-item"
+        (mouseenter)="selectPokemon(pokemon)"
+        (click)="seePokemon(pokemon)"
+      >
+        <div class="poke-list-item-left">
+          <div class="poke-list-item-image">
+            <img
+              [src]="pokemon.sprites.icons.front_default"
+              [alt]="pokemon.name"
+              class="poke-list-item-image"
+            />
+          </div>
+          <p class="poke-list-item-info-element poke-list-item-id">
+            No. {{ pokemon.id | number : '3.0' }}
+          </p>
+        </div>
+        <div class="poke-list-item-right">
+          <h2 class="poke-list-item-info-element poke-list-item-name">
+            {{ pokemon.name }}
+          </h2>
+          <div class="poke-list-item-status">
+            @switch(pokemon.status) { @case(PokedexEntryStatus.Caught) {
+            <img
+              src="/assets/icons/captured-icon_captured-icon-black.svg"
+              alt="Catched icon"
+              class="pokemon-catched-icon"
+            />
+            } @case(PokedexEntryStatus.Seen) {
+            <img
+              src="/assets/icons/pkm-catch-status--bl.svg"
+              alt="Seen Icon"
+              class="pokemon-seen-icon"
+            />
+            } @default { } }
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+
+  <div class="poke-list-footer">
+    <div class="poke-list-footer-keybind">
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/left-click.png"
+        alt="Left Click Icon"
+        class="left-click-icon"
+      />
+      <p class="poke-list-footer-keybind-text">See Details</p>
+    </div>
+    <div class="poke-list-footer-keybind">
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/right-click.png"
+        alt="Right Click Icon"
+        class="right-click-icon"
+      />
+      <p class="poke-list-footer-keybind-text">Habitat</p>
+    </div>
+    <div class="poke-list-footer-keybind">
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/e-key.png"
+        alt="E Key Icon"
+        class="e-key-icon"
+      />
+      <p class="poke-list-footer-keybind-text">Sort</p>
+    </div>
+    <div class="poke-list-footer-keybind">
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/r-key.png"
+        alt="R Key Icon"
+        class="r-key-icon"
+      />
+      <p class="poke-list-footer-keybind-text">Evaluation</p>
+    </div>
+    <div class="poke-list-footer-keybind">
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/esc-key.png"
+        alt="Esc Key Icon"
+        class="esc-key-icon"
+      />
+      <p class="poke-list-footer-keybind-text">Back</p>
+    </div>
+  </div>
+</div>

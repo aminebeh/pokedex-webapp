@@ -1,0 +1,38 @@
+<svg width="21" xmlns="http://www.w3.org/2000/svg" height="28" fill="none">
+    <g class="fills">
+        <rect rx="0" ry="0" width="21" height="28"
+            transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="frame-background" />
+    </g>
+    <g class="frame-children">
+        <path d="M7.500,28.000L13.000,28.000L13.000,22.500L7.500,22.500L7.500,28.000Z"
+            style="fill: rgb(0, 0, 0); fill-opacity: 1;" class="fills" />
+        <g class="strokes">
+            <g class="inner-stroke-shape">
+                <defs>
+                    <clipPath id="b">
+                        <use href="#a" />
+                    </clipPath>
+                    <path d="M7.500,28.000L13.000,28.000L13.000,22.500L7.500,22.500L7.500,28.000Z" id="a"
+                        style="fill: none; stroke-width: 4; stroke: rgb(0, 0, 0); stroke-opacity: 1;" />
+                </defs>
+                <use href="#a" clip-path="url('#b')" />
+            </g>
+        </g>
+        <path
+            d="M13.000,20.000L13.000,18.000C13.000,18.000,21.000,14.500,21.000,8.500C21.000,5.500,19.000,0.000,10.000,0.000C10.000,0.000,0.000,0.500,0.000,10.500C3.000,10.500,5.000,10.500,5.000,10.500C5.000,5.500,8.297,4.500,11.000,4.500C13.500,4.500,15.500,7.500,15.500,9.500C15.500,9.500,12.000,13.000,8.000,14.500C6.486,15.068,7.500,20.000,7.500,20.000L13.000,20.000ZM8.000,14.500"
+            style="fill: rgb(0, 0, 0); fill-opacity: 1;" class="fills" />
+        <g class="strokes">
+            <g class="inner-stroke-shape">
+                <defs>
+                    <clipPath id="d">
+                        <use href="#c" />
+                    </clipPath>
+                    <path
+                        d="M13.000,20.000L13.000,18.000C13.000,18.000,21.000,14.500,21.000,8.500C21.000,5.500,19.000,0.000,10.000,0.000C10.000,0.000,0.000,0.500,0.000,10.500C3.000,10.500,5.000,10.500,5.000,10.500C5.000,5.500,8.297,4.500,11.000,4.500C13.500,4.500,15.500,7.500,15.500,9.500C15.500,9.500,12.000,13.000,8.000,14.500C6.486,15.068,7.500,20.000,7.500,20.000L13.000,20.000ZM8.000,14.500"
+                        id="c" style="fill: none; stroke-width: 2; stroke: rgb(0, 0, 0); stroke-opacity: 1;" />
+                </defs>
+                <use href="#c" clip-path="url('#d')" />
+            </g>
+        </g>
+    </g>
+</svg>

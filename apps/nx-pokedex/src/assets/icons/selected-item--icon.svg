@@ -1,0 +1,54 @@
+<svg width="45" xmlns="http://www.w3.org/2000/svg" height="55" id="screenshot-fbf629fc-ac99-8004-8005-94a5ba71912c"
+    viewBox="2049 3365 45 55" style="-webkit-print-color-adjust::exact" xmlns:xlink="http://www.w3.org/1999/xlink"
+    fill="none" version="1.1">
+    <g id="shape-fbf629fc-ac99-8004-8005-94a5ba71912c">
+        <g class="fills" id="fills-fbf629fc-ac99-8004-8005-94a5ba71912c">
+            <path
+                d="M2061.469,3414.750C2061.469,3414.750,2057.967,3415.835,2055.837,3413.483C2053.379,3410.767,2054.586,3407.147,2054.586,3407.147L2074.609,3392.574L2054.586,3378.001C2054.586,3378.001,2052.917,3373.988,2055.212,3371.665C2057.923,3368.919,2062.094,3370.397,2062.094,3370.397L2087.749,3388.138C2087.749,3388.138,2089.000,3389.406,2089.000,3391.940C2089.000,3394.475,2087.749,3395.742,2087.749,3395.742L2061.469,3414.750Z">
+            </path>
+        </g>
+        <g id="strokes-fbf629fc-ac99-8004-8005-94a5ba71912c" class="strokes">
+            <g class="outer-stroke-shape">
+                <defs>
+                    <mask id="outer-stroke-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-1" x="2049.171572875254"
+                        y="3365.171572875254" width="44.65685424949238" height="54.65685424949193"
+                        maskUnits="userSpaceOnUse">
+                        <use href="#stroke-shape-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-1"
+                            style="fill:none;stroke:white;stroke-width:4">
+                        </use>
+                        <use href="#stroke-shape-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-1"
+                            style="fill:black;stroke:none">
+                        </use>
+                    </mask>
+                    <path
+                        d="M2061.469,3414.750C2061.469,3414.750,2057.967,3415.835,2055.837,3413.483C2053.379,3410.767,2054.586,3407.147,2054.586,3407.147L2074.609,3392.574L2054.586,3378.001C2054.586,3378.001,2052.917,3373.988,2055.212,3371.665C2057.923,3368.919,2062.094,3370.397,2062.094,3370.397L2087.749,3388.138C2087.749,3388.138,2089.000,3389.406,2089.000,3391.940C2089.000,3394.475,2087.749,3395.742,2087.749,3395.742L2061.469,3414.750Z"
+                        id="stroke-shape-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-1">
+                    </path>
+                </defs>
+                <use href="#stroke-shape-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-1"
+                    mask="url(#outer-stroke-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-1)"
+                    style="fill:none;stroke-width:4;stroke:#ffffff;stroke-opacity:1">
+                </use>
+                <use href="#stroke-shape-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-1"
+                    style="fill:none;fill-opacity:none;stroke-width:2;stroke:none;stroke-opacity:1">
+                </use>
+            </g>
+            <g class="inner-stroke-shape">
+                <defs>
+                    <clipPath id="inner-stroke-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-0">
+                        <use href="#stroke-shape-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-0">
+                        </use>
+                    </clipPath>
+                    <path
+                        d="M2061.469,3414.750C2061.469,3414.750,2057.967,3415.835,2055.837,3413.483C2053.379,3410.767,2054.586,3407.147,2054.586,3407.147L2074.609,3392.574L2054.586,3378.001C2054.586,3378.001,2052.917,3373.988,2055.212,3371.665C2057.923,3368.919,2062.094,3370.397,2062.094,3370.397L2087.749,3388.138C2087.749,3388.138,2089.000,3389.406,2089.000,3391.940C2089.000,3394.475,2087.749,3395.742,2087.749,3395.742L2061.469,3414.750Z"
+                        style="fill:none;fill-opacity:none;stroke-width:12;stroke:#000000;stroke-opacity:1"
+                        id="stroke-shape-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-0">
+                    </path>
+                </defs>
+                <use href="#stroke-shape-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-0"
+                    clip-path="url(&#x27;#inner-stroke-render-116579-fbf629fc-ac99-8004-8005-94a5ba71912c-0&#x27;)">
+                </use>
+            </g>
+        </g>
+    </g>
+</svg>

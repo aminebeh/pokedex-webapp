@@ -1,0 +1,40 @@
+<svg width="1026.956" xmlns="http://www.w3.org/2000/svg" height="1087.446" viewBox="-146.978 -114.693 1026.956 1087.446"
+    fill="none">
+    <g class="fills">
+        <rect rx="0" ry="0" width="733" height="858.061"
+            transform="matrix(0.906308, -0.422618, 0.422618, 0.906308, -146.977857, 195.086394)"
+            class="frame-background" />
+    </g>
+    <g class="frame-children">
+        <path
+            d="M442.026,743.616C442.026,743.616,522.990,829.440,548.269,817.653C573.646,805.819,558.033,689.521,558.033,689.521L442.026,743.616Z"
+            style="fill: rgb(255, 123, 76); fill-opacity: 1;" class="fills" />
+        <rect rx="146" ry="146" x="24.313" y="221.671"
+            transform="matrix(0.906308, -0.422618, 0.422618, 0.906308, -166.735279, 210.246797)" width="733"
+            height="519" style="fill: rgb(255, 123, 76); fill-opacity: 1;" class="fills" />
+        <rect rx="96" ry="96" x="68.999" y="268.74"
+            transform="matrix(0.906308, -0.422618, 0.422618, 0.906308, -165.573240, 209.627950)" width="642"
+            height="419" style="fill: rgb(251, 114, 72); fill-opacity: 1;" class="fills" />
+        <ellipse cx="231.859" cy="440.541" rx="27.5" ry="27.61"
+            transform="matrix(0.422618, 0.906308, -0.906308, 0.422618, 533.136823, 44.224146)"
+            style="fill: rgb(255, 123, 76); fill-opacity: 1;" class="fills" />
+        <rect rx="0" ry="0" x="289.855" y="346.579"
+            transform="matrix(0.906308, -0.422618, 0.422618, 0.906308, -116.800768, 200.303580)" width="207" height="34"
+            style="fill: rgb(255, 123, 76); fill-opacity: 1;" class="fills" />
+        <ellipse cx="273.276" cy="529.359" rx="27.5" ry="27.61"
+            transform="matrix(0.422618, 0.906308, -0.906308, 0.422618, 637.546599, 57.969954)"
+            style="fill: rgb(255, 123, 76); fill-opacity: 1;" class="fills" />
+        <rect rx="0" ry="0" x="331.272" y="435.397"
+            transform="matrix(0.906308, -0.422618, 0.422618, 0.906308, -150.456533, 226.128557)" width="207" height="34"
+            style="fill: rgb(255, 123, 76); fill-opacity: 1;" class="fills" />
+        <ellipse cx="317.228" cy="623.615" rx="27.5" ry="27.61"
+            transform="matrix(0.422618, 0.906308, -0.906308, 0.422618, 748.348809, 72.557341)"
+            style="fill: rgb(255, 123, 76); fill-opacity: 1;" class="fills" />
+        <rect rx="0" ry="0" x="375.224" y="529.653"
+            transform="matrix(0.906308, -0.422618, 0.422618, 0.906308, -186.172856, 253.534656)" width="207" height="34"
+            style="fill: rgb(255, 123, 76); fill-opacity: 1;" class="fills" />
+        <path
+            d="M215.437,276.623C215.437,276.623,161.884,137.313,182.497,123.167C187.512,119.725,245.750,116.842,248.108,112.433C249.310,110.184,228.113,17.185,241.854,13.838C251.762,11.425,343.843,129.469,341.616,144.962C337.197,175.711,295.886,164.196,297.446,173.282C299.376,184.520,328.725,223.796,328.725,223.796L215.437,276.623Z"
+            style="fill: rgb(255, 123, 76); fill-opacity: 1;" class="fills" />
+    </g>
+</svg>

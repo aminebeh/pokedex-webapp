@@ -1,0 +1,11 @@
+<svg width="21" xmlns="http://www.w3.org/2000/svg" height="21" fill="none">
+    <g class="fills">
+        <rect rx="0" ry="0" width="21" height="21"
+            transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="frame-background" />
+    </g>
+    <g class="frame-children">
+        <ellipse cx="10.5" cy="10.5" rx="10.5" ry="10.5"
+            transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)"
+            style="fill: rgb(168, 168, 168); fill-opacity: 1;" class="fills" />
+    </g>
+</svg>

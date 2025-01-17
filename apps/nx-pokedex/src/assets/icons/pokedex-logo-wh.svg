@@ -1,0 +1,38 @@
+<svg width="733" xmlns="http://www.w3.org/2000/svg" height="858.061" fill="none">
+    <g class="fills">
+        <rect rx="0" ry="0" width="733" height="858.061"
+            transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="frame-background" />
+    </g>
+    <g class="frame-children">
+        <path
+            d="M302.000,746.061C302.000,746.061,339.107,858.061,367.000,858.061C395.000,858.061,430.000,746.061,430.000,746.061L302.000,746.061Z"
+            style="fill: rgb(255, 63, 16); fill-opacity: 1;" class="fills" />
+        <rect rx="146" ry="146" y="227.061"
+            transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="733" height="519"
+            style="fill: rgb(255, 63, 16); fill-opacity: 1;" class="fills" />
+        <rect rx="96" ry="96" x="46" y="274.061"
+            transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="642" height="419"
+            style="fill: rgb(255, 255, 255); fill-opacity: 1;" class="fills" />
+        <ellipse cx="239.61" cy="382.561" rx="27.5" ry="27.61"
+            transform="matrix(-0.000000, 1.000000, -1.000000, 0.000000, 622.170371, 142.950955)"
+            style="fill: rgb(255, 63, 16); fill-opacity: 1;" class="fills" />
+        <rect rx="0" ry="0" x="315" y="364.061"
+            transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="207" height="34"
+            style="fill: rgb(255, 63, 16); fill-opacity: 1;" class="fills" />
+        <ellipse cx="239.61" cy="480.561" rx="27.5" ry="27.61"
+            transform="matrix(-0.000000, 1.000000, -1.000000, 0.000000, 720.170371, 240.950955)"
+            style="fill: rgb(255, 63, 16); fill-opacity: 1;" class="fills" />
+        <rect rx="0" ry="0" x="315" y="462.061"
+            transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="207" height="34"
+            style="fill: rgb(255, 63, 16); fill-opacity: 1;" class="fills" />
+        <ellipse cx="239.61" cy="584.561" rx="27.5" ry="27.61"
+            transform="matrix(-0.000000, 1.000000, -1.000000, 0.000000, 824.170371, 344.950955)"
+            style="fill: rgb(255, 63, 16); fill-opacity: 1;" class="fills" />
+        <rect rx="0" ry="0" x="315" y="566.061"
+            transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="207" height="34"
+            style="fill: rgb(255, 63, 16); fill-opacity: 1;" class="fills" />
+        <path
+            d="M294.000,227.061C294.000,227.061,304.340,78.171,329.000,74.061C335.000,73.061,389.000,95.061,393.000,92.061C395.040,90.531,415.132,-2.713,429.000,0.061C439.000,2.061,472.566,147.960,464.000,161.061C447.000,187.061,414.426,159.166,412.000,168.061C409.000,179.061,419.000,227.061,419.000,227.061L294.000,227.061Z"
+            style="fill: rgb(255, 63, 16); fill-opacity: 1;" class="fills" />
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="27" xmlns="http://www.w3.org/2000/svg" height="27" fill="none">
+    <g class="fills">
+        <rect rx="0" ry="0" width="27" height="27"
+            transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="frame-background" />
+    </g>
+    <g class="frame-children">
+        <path
+            d="M13.500,0.000C20.951,0.000,27.000,6.049,27.000,13.500C27.000,20.951,20.951,27.000,13.500,27.000C6.049,27.000,0.000,20.951,0.000,13.500C0.000,6.049,6.049,0.000,13.500,0.000Z"
+            style="fill: rgb(0, 0, 0); fill-opacity: 0.4;" class="fills" />
+    </g>
+</svg>

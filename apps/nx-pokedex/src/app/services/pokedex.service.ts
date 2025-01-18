@@ -9,6 +9,8 @@ export interface IPokemon {
     icons: { front_default: string };
     showdown: string;
   };
+  height: number;
+  weight: number;
 }
 
 export enum PokedexEntryStatus {

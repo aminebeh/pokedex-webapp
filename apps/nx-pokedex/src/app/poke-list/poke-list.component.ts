@@ -92,6 +92,10 @@ export class PokeListComponent {
           return a.name.localeCompare(b.name);
         case 'id':
           return a.id - b.id;
+        case 'height':
+          return a.height - b.height;
+        case 'weight':
+          return a.weight - b.weight;
         default:
           return 0;
       }

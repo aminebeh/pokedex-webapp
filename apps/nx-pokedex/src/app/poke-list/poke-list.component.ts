@@ -15,11 +15,12 @@ import {
   PokedexEntryStatus,
   PokedexService,
 } from '../services/pokedex.service';
+import { PokeListItemComponent } from '../poke-list-item/poke-list-item.component';
 
 @Component({
   selector: 'app-poke-list',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, PokeListItemComponent],
   templateUrl: './poke-list.component.html',
   styleUrl: './poke-list.component.scss',
   providers: [PokedexService],
@@ -50,8 +51,6 @@ export class PokeListComponent {
     () => this.catchedTotal$() + this.seenTotal$()
   );
 
-  public readonly PokedexEntryStatus = PokedexEntryStatus;
-
   private pokedexSortEffect = effect(() => {
     console.log('Pokedex sort criteria (effect):', this.pokedexSortCriteria$());
     // this.sortPokedex(this.pokedexSortCriteria$());
@@ -74,7 +73,11 @@ export class PokeListComponent {
   }
 
   selectPokemon(pokemon: IPokedexEntry): void {
-    this.selectedPokemon$.set(pokemon);
+    if (pokemon.status == PokedexEntryStatus.None) {
+      this.selectedPokemon$.set(null);
+    } else {
+      this.selectedPokemon$.set(pokemon);
+    }
   }
 
   seePokemon(pokemon: IPokedexEntry): void {

@@ -1,1 +1,43 @@
-<p>poke-list-item works!</p>
+<div class="poke-list-item">
+  @let pkmn = pokemon();
+  <div class="poke-list-item-left">
+    <div class="poke-list-item-image-container">
+      @if(pkmn.status === PokedexEntryStatus.None) {
+      <img
+        src="/assets/icons/unknown-icon.svg"
+        alt="Unknown icon"
+        class="poke-list-item-image"
+      />
+      } @else {
+      <img
+        [src]="pkmn.sprites.icons.front_default"
+        [alt]="pkmn.name"
+        class="poke-list-item-image"
+      />
+      }
+    </div>
+    <p class="poke-list-item-info-element poke-list-item-id">
+      No. {{ pkmn.id | number : '3.0' }}
+    </p>
+  </div>
+  <div class="poke-list-item-right">
+    <h2 class="poke-list-item-info-element poke-list-item-name">
+      {{ pkmn.status == PokedexEntryStatus.None ? '?????' : pkmn.name }}
+    </h2>
+    <div class="poke-list-item-status">
+      @switch(pkmn.status) { @case(PokedexEntryStatus.Caught) {
+      <img
+        src="/assets/icons/captured-icon_captured-icon-black.svg"
+        alt="Catched icon"
+        class="pokemon-catched-icon"
+      />
+      } @case(PokedexEntryStatus.Seen) {
+      <img
+        src="/assets/icons/pkm-catch-status--bl.svg"
+        alt="Seen Icon"
+        class="pokemon-seen-icon"
+      />
+      } @default { } }
+    </div>
+  </div>
+</div>

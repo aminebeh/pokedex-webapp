@@ -59,44 +59,11 @@
       </div>
       <div class="poke-list-container">
         @for(pokemon of sortedPokedexEntries$(); track pokemon.id) {
-        <div
-          class="poke-list-item"
+        <app-poke-list-item
+          [pokemon]="pokemon"
           (mouseenter)="selectPokemon(pokemon)"
           (click)="seePokemon(pokemon)"
-        >
-          <div class="poke-list-item-left">
-            <div class="poke-list-item-image">
-              <img
-                [src]="pokemon.sprites.icons.front_default"
-                [alt]="pokemon.name"
-                class="poke-list-item-image"
-              />
-            </div>
-            <p class="poke-list-item-info-element poke-list-item-id">
-              No. {{ pokemon.id | number : '3.0' }}
-            </p>
-          </div>
-          <div class="poke-list-item-right">
-            <h2 class="poke-list-item-info-element poke-list-item-name">
-              {{ pokemon.name }}
-            </h2>
-            <div class="poke-list-item-status">
-              @switch(pokemon.status) { @case(PokedexEntryStatus.Caught) {
-              <img
-                src="/assets/icons/captured-icon_captured-icon-black.svg"
-                alt="Catched icon"
-                class="pokemon-catched-icon"
-              />
-              } @case(PokedexEntryStatus.Seen) {
-              <img
-                src="/assets/icons/pkm-catch-status--bl.svg"
-                alt="Seen Icon"
-                class="pokemon-seen-icon"
-              />
-              } @default { } }
-            </div>
-          </div>
-        </div>
+        ></app-poke-list-item>
         }
       </div>
     </div>

@@ -166,39 +166,6 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        .poke-list-item {
-            display: flex;
-            flex-direction: row;
-            //justify-content: space-between;
-            .poke-list-item-left, .poke-list-item-right {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-start;
-                width: 50%;
-            }
-
-
-        }
-        .poke-list-item-info {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            flex: 1;
-            .poke-list-item-name {
-                flex: 2;
-            }
-        }
-        .poke-list-item-info-element {
-            margin: 0 20px; 
-        }
-        .poke-list-item-image {
-            margin-right: 24px;
-        }
-        .poke-list-item-status {
-            margin-left: auto;
-        }
 
         // Scrollbar styling
         

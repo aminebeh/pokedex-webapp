@@ -21,7 +21,11 @@
             "glob": "**/*",
             "input": "apps/nx-pokedex/public"
           },
-          "apps/nx-pokedex/src/assets"
+          {
+            "glob": "**/*",
+            "input": "apps/nx-pokedex/src/assets",
+            "output": "/assets"
+          }
         ],
         "styles": ["apps/nx-pokedex/src/styles.scss"],
         "scripts": []

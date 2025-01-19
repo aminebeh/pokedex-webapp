@@ -3,6 +3,10 @@
 }
 
 .poke-list-layout {
+    font-family: 'Source Sans 3', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
     display: flex;
     flex-direction: column;
     position: relative;
@@ -21,10 +25,6 @@
 
 
 .poke-list-header {
-    font-family: "sourcesanspro";
-    font-style: normal;
-    font-weight: 400;
-
     height: 56px;
     display: flex;
     flex-direction: row;
@@ -109,6 +109,7 @@
             width: 100%;
             height: 100%;
             font-size: 26px;
+            font-family: 'Source Sans 3', sans-serif;
             color: #fff;
             // background-color: #333;
             background-color: transparent;
@@ -134,7 +135,8 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
-
+    
+    margin: 24px 0;
 
     .poke-list-showdown {
         width: 55%;
@@ -144,7 +146,7 @@
             align-items: center;
 
         .poke-showdown-image-container {
-            margin-bottom: -25%;
+            margin-bottom: -5vh;
         }
 
         .poke-showdown-image {
@@ -153,7 +155,7 @@
             width: auto;
             height: auto;
             object-fit: contain;
-            transform: scale(2); // Adjust the scale factor as needed
+            transform: scale(2.5); // Adjust the scale factor as needed
         }
     }
     .poke-list-container {
@@ -199,9 +201,8 @@
 }
 
 .poke-list-footer {
-    
     font-size: 20px;
-    font-family: 'sourcesanspro';
+
     //height: 40px;
     display: flex;
     flex-direction: row;

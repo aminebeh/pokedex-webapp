@@ -1,7 +1,12 @@
 .poke-list-item {
     display: flex;
     flex-direction: row;
-    //justify-content: space-between;
+
+    margin-bottom: 32px;
+    border-radius: 25px;
+
+    position: relative;
+    
     .poke-list-item-left, .poke-list-item-right {
         display: flex;
         flex-direction: row;
@@ -10,23 +15,67 @@
         width: 50%;
     }
 
+    &:hover {
+        background: linear-gradient(
+            110deg,
+            #fb440c 0%,
+            #fb440c 48%,
+            #000 48.1%,
+            #000 100%
+        );
+
+        .poke-list-item-info-element { 
+            color: #fff;
+        }
+
+        // Quick hack to change from black to white the status icon color
+        // Note: Not optimal as the icon should transition from black with 30% opacity to plain gray when the item is highlighted
+        // TODO: Remove this hack in favor of a more robust solution (i.e. changing the img src in the component, use an svg and change the color with css)
+        .poke-list-item-status-icon {
+            filter: invert(100%);
+        }
+    }
+
 }
-.poke-list-item-info {
+
+.poke-list-item-info-element {
+    font-size: 28px;
+    margin: 0;
+}
+
+.poke-list-item-image-container {
+    width: 48px;
+    height: 48px;
+    overflow: visible;
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    .poke-list-item-name {
-        flex: 2;
+    justify-content: center;
+    
+    .poke-list-item-image {
+        position: absolute;
+        bottom: 10%;
+        &.pokemon-icon {
+            width: auto;
+            height: 100%;
+        }
+        &.unknown-icon {
+            width: 28px;
+        }
     }
 }
-.poke-list-item-info-element {
-    margin: 0 20px; 
-}
-.poke-list-item-image {
-    margin-right: 24px;
-}
+
 .poke-list-item-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     margin-left: auto;
+    margin-right: 12px;
+
+    .poke-list-item-status-icon {
+        width: 24px;
+        height: 24px;
+    }
 }
+

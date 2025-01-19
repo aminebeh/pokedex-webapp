@@ -6,13 +6,13 @@
       <img
         src="/assets/icons/unknown-icon.svg"
         alt="Unknown icon"
-        class="poke-list-item-image"
+        class="poke-list-item-image unknown-icon"
       />
       } @else {
       <img
         [src]="pkmn.sprites.icons.front_default"
         [alt]="pkmn.name"
-        class="poke-list-item-image"
+        class="poke-list-item-image pokemon-icon"
       />
       }
     </div>
@@ -29,13 +29,13 @@
       <img
         src="/assets/icons/captured-icon_captured-icon-black.svg"
         alt="Catched icon"
-        class="pokemon-catched-icon"
+        class="poke-list-item-status-icon pokemon-catched-icon"
       />
       } @case(PokedexEntryStatus.Seen) {
       <img
         src="/assets/icons/pkm-catch-status--bl.svg"
         alt="Seen Icon"
-        class="pokemon-seen-icon"
+        class="poke-list-item-status-icon pokemon-seen-icon"
       />
       } @default { } }
     </div>

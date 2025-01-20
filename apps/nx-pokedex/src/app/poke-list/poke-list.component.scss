@@ -161,12 +161,18 @@
         }
     }
     .poke-list-container {
-        width: 45%;
+        width: 50%;
         padding: 6px 12px;
+        overflow-x: hidden;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
 
+        padding-left: 50px;
+
+        .poke-list-item-container {
+            margin-bottom: 32px;
+        }
         // Scrollbar styling
         
         /* Width of the entire scrollbar */
@@ -193,7 +199,9 @@
         /* Handle on hover */
         &::-webkit-scrollbar-thumb:hover {
             background: #f96042dd;
-        }        
+        }
+
+        
 
     }
 }

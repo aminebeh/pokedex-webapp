@@ -1,8 +1,48 @@
+:host {
+    position: relative;
+
+    &:hover {
+        .poke-list-item {
+            background: linear-gradient(
+                110deg,
+                #fb440c 0%,
+                #fb440c 48%,
+                #000 48.1%,
+                #000 100%
+            );
+    
+            .poke-list-item-info-element { 
+                color: #fff;
+            }
+    
+            // Quick hack to change from black to white the status icon color
+            // Note: Not optimal as the icon should transition from black with 30% opacity to plain gray when the item is highlighted
+            // TODO: Remove this hack in favor of a more robust solution (i.e. changing the img src in the component, use an svg and change the color with css)
+            .poke-list-item-status-icon {
+                filter: invert(100%);
+            }
+        }
+
+        .poke-list-item-select-icon {
+            visibility: visible;
+        }
+    }
+}
+
+.poke-list-item-select-icon {
+    width: 50px;
+    height: 100%;
+    background: url('/assets/icons/selected-item--icon.svg') center/contain no-repeat ;
+    position: absolute;
+    z-index: 2;
+    left: -30px;
+    visibility: hidden;
+
+}
+
 .poke-list-item {
     display: flex;
     flex-direction: row;
-
-    margin-bottom: 32px;
     border-radius: 25px;
 
     position: relative;
@@ -13,27 +53,6 @@
         align-items: center;
         justify-content: flex-start;
         width: 50%;
-    }
-
-    &:hover {
-        background: linear-gradient(
-            110deg,
-            #fb440c 0%,
-            #fb440c 48%,
-            #000 48.1%,
-            #000 100%
-        );
-
-        .poke-list-item-info-element { 
-            color: #fff;
-        }
-
-        // Quick hack to change from black to white the status icon color
-        // Note: Not optimal as the icon should transition from black with 30% opacity to plain gray when the item is highlighted
-        // TODO: Remove this hack in favor of a more robust solution (i.e. changing the img src in the component, use an svg and change the color with css)
-        .poke-list-item-status-icon {
-            filter: invert(100%);
-        }
     }
 
 }
@@ -78,4 +97,3 @@
         height: 24px;
     }
 }
-

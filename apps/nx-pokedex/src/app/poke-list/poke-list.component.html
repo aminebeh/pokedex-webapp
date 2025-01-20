@@ -60,6 +60,7 @@
       <div class="poke-list-container">
         @for(pokemon of sortedPokedexEntries$(); track pokemon.id) {
         <app-poke-list-item
+          class="poke-list-item-container"
           [pokemon]="pokemon"
           (mouseenter)="selectPokemon(pokemon)"
           (click)="seePokemon(pokemon)"

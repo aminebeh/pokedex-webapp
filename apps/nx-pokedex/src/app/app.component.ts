@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { PokeListComponent } from './poke-list/poke-list.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PokeListModule } from './poke-list/poke-list.module';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, PokeListComponent, BrowserAnimationsModule],
+  imports: [RouterModule, PokeListModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

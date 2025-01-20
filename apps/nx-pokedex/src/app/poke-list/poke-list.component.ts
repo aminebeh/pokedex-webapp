@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import {
   Component,
   computed,
@@ -9,21 +8,18 @@ import {
   WritableSignal,
 } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { FormsModule } from '@angular/forms';
 import {
   IPokedexEntry,
   PokedexEntryStatus,
   PokedexService,
 } from '../services/pokedex.service';
-import { PokeListItemComponent } from '../poke-list-item/poke-list-item.component';
 
 @Component({
   selector: 'app-poke-list',
-  standalone: true,
-  imports: [CommonModule, FormsModule, PokeListItemComponent],
+  standalone: false,
   templateUrl: './poke-list.component.html',
   styleUrl: './poke-list.component.scss',
-  providers: [PokedexService],
+  providers: [],
 })
 export class PokeListComponent {
   public pokedexEntries$: Signal<IPokedexEntry[]>;

@@ -1,11 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { IPokedexEntry, PokedexEntryStatus } from '../services/pokedex.service';
 
 @Component({
   selector: 'app-poke-list-item',
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: './poke-list-item.component.html',
   styleUrl: './poke-list-item.component.scss',
 })

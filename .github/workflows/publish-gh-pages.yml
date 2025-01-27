@@ -64,7 +64,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload built files to be deployed
-          path: 'dist/apps/nx-pokedex'
+          path: dist/apps/nx-pokedex/browser
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

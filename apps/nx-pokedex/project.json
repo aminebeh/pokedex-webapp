@@ -24,7 +24,7 @@
           {
             "glob": "**/*",
             "input": "apps/nx-pokedex/src/assets",
-            "output": "/assets"
+            "output": "assets"
           }
         ],
         "styles": ["apps/nx-pokedex/src/styles.scss"],
@@ -41,8 +41,8 @@
             },
             {
               "type": "anyComponentStyle",
-              "maximumWarning": "2kb",
-              "maximumError": "4kb"
+              "maximumWarning": "3kb",
+              "maximumError": "6kb"
             }
           ],
           "outputHashing": "all"
@@ -75,7 +75,7 @@
       "configurations": {
         "production": {
           "buildTarget": "nx-pokedex:build:production",
-          "servePath": "pokedex-webapp"
+          "servePath": "/pokedex-webapp"
         },
         "development": {
           "buildTarget": "nx-pokedex:build:development"

@@ -32,6 +32,22 @@
       },
       "configurations": {
         "production": {
+          "baseHref": "/pokedex-webapp/",
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "static-production": {
           "budgets": [
             {
               "type": "initial",
@@ -58,7 +74,8 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "nx-pokedex:build:production"
+          "buildTarget": "nx-pokedex:build:production",
+          "servePath": "pokedex-webapp"
         },
         "development": {
           "buildTarget": "nx-pokedex:build:development"
@@ -85,8 +102,8 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "nx-pokedex:build",
-        "port": 4200,
+        "buildTarget": "nx-pokedex:build:static-production",
+        "port": 4201,
         "staticFilePath": "dist/apps/nx-pokedex/browser",
         "spa": true
       }

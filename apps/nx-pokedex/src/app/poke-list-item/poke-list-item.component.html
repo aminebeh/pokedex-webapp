@@ -5,7 +5,7 @@
     <div class="poke-list-item-image-container">
       @if(pkmn.status === PokedexEntryStatus.None) {
       <img
-        src="/assets/icons/unknown-icon.svg"
+        src="assets/icons/unknown-icon.svg"
         alt="Unknown icon"
         class="poke-list-item-image unknown-icon"
       />
@@ -28,13 +28,13 @@
     <div class="poke-list-item-status">
       @switch(pkmn.status) { @case(PokedexEntryStatus.Caught) {
       <img
-        src="/assets/icons/captured-icon_captured-icon-black.svg"
+        src="assets/icons/captured-icon_captured-icon-black.svg"
         alt="Catched icon"
         class="poke-list-item-status-icon pokemon-catched-icon"
       />
       } @case(PokedexEntryStatus.Seen) {
       <img
-        src="/assets/icons/pkm-catch-status--bl.svg"
+        src="assets/icons/pkm-catch-status--bl.svg"
         alt="Seen Icon"
         class="poke-list-item-status-icon pokemon-seen-icon"
       />

@@ -1,99 +1,99 @@
 :host {
-    position: relative;
+  position: relative;
 
-    &:hover {
-        .poke-list-item {
-            background: linear-gradient(
-                110deg,
-                #fb440c 0%,
-                #fb440c 48%,
-                #000 48.1%,
-                #000 100%
-            );
-    
-            .poke-list-item-info-element { 
-                color: #fff;
-            }
-    
-            // Quick hack to change from black to white the status icon color
-            // Note: Not optimal as the icon should transition from black with 30% opacity to plain gray when the item is highlighted
-            // TODO: Remove this hack in favor of a more robust solution (i.e. changing the img src in the component, use an svg and change the color with css)
-            .poke-list-item-status-icon {
-                filter: invert(100%);
-            }
-        }
+  &:hover {
+    .poke-list-item {
+      background: linear-gradient(
+        110deg,
+        #fb440c 0%,
+        #fb440c 48%,
+        #000 48.1%,
+        #000 100%
+      );
 
-        .poke-list-item-select-icon {
-            visibility: visible;
-        }
+      .poke-list-item-info-element {
+        color: #fff;
+      }
+
+      // Quick hack to change from black to white the status icon color
+      // Note: Not optimal as the icon should transition from black with 30% opacity to plain gray when the item is highlighted
+      // TODO: Remove this hack in favor of a more robust solution (i.e. changing the img src in the component, use an svg and change the color with css)
+      .poke-list-item-status-icon {
+        filter: invert(100%);
+      }
     }
+
+    .poke-list-item-select-icon {
+      visibility: visible;
+    }
+  }
 }
 
 .poke-list-item-select-icon {
-    width: 50px;
-    height: 100%;
-    background: url('/assets/icons/selected-item--icon.svg') center/contain no-repeat ;
-    position: absolute;
-    z-index: 2;
-    left: -30px;
-    visibility: hidden;
-
+  width: 50px;
+  height: 100%;
+  background: url('assets/icons/selected-item--icon.svg') center/contain
+    no-repeat;
+  position: absolute;
+  z-index: 2;
+  left: -30px;
+  visibility: hidden;
 }
 
 .poke-list-item {
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+
+  position: relative;
+
+  .poke-list-item-left,
+  .poke-list-item-right {
     display: flex;
     flex-direction: row;
-    border-radius: 25px;
-
-    position: relative;
-    
-    .poke-list-item-left, .poke-list-item-right {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        width: 50%;
-    }
-
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+  }
 }
 
 .poke-list-item-info-element {
-    font-size: 28px;
-    margin: 0;
+  font-size: 28px;
+  margin: 0;
 }
 
 .poke-list-item-image-container {
-    width: 48px;
-    height: 48px;
-    overflow: visible;
+  width: 48px;
+  height: 48px;
+  overflow: visible;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-    .poke-list-item-image {
-        position: absolute;
-        bottom: 10%;
-        &.pokemon-icon {
-            width: auto;
-            height: 100%;
-        }
-        &.unknown-icon {
-            width: 28px;
-        }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .poke-list-item-image {
+    position: absolute;
+    bottom: 10%;
+    &.pokemon-icon {
+      width: auto;
+      height: 100%;
     }
+    &.unknown-icon {
+      width: 28px;
+    }
+  }
 }
 
 .poke-list-item-status {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    margin-left: auto;
-    margin-right: 12px;
+  margin-left: auto;
+  margin-right: 12px;
 
-    .poke-list-item-status-icon {
-        width: 24px;
-        height: 24px;
-    }
+  .poke-list-item-status-icon {
+    width: 24px;
+    height: 24px;
+  }
 }

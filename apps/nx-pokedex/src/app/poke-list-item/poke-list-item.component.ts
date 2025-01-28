@@ -22,13 +22,13 @@ export class PokeListItemComponent {
         return {
           name: this.pokemon().name,
           spriteIcon: this.pokemon().sprites.icons.front_default,
-          caughtIcon: '/assets/icons/pkm-catch-status--bl.svg'
+          caughtIcon: 'assets/icons/pkm-catch-status--bl.svg'
         }
       case PokedexEntryStatus.Caught:
         return {
           name: this.pokemon().name,
           spriteIcon: this.pokemon().sprites.icons.front_default,
-          caughtIcon: '/assets/icons/pkm-catch-status--rd.svg'
+          caughtIcon: 'assets/icons/pkm-catch-status--rd.svg'
         }
     }
   }); */

@@ -40,7 +40,8 @@
 				"dbaeumer.vscode-eslint",
 				"Angular.ng-template",
 				"johnpapa.Angular2",
-				"GitHub.vscode-github-actions"
+				"GitHub.vscode-github-actions",
+				"jock.svg"
 			]
 		}
 	}
